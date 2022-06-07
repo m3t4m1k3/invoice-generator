@@ -1,4 +1,5 @@
 # Invoice Generator
+
 Scrimba - Module 3 - Final Solo Project - Invoice Generator
 
 This project was completed as part of the [Scrimba](https://scrimba.com/) [Frontend Career Path](https://scrimba.com/learn/frontend/) curriculum.
