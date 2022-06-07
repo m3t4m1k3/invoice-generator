@@ -5,15 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Invoice Generator</title>
   </head>
   <body>
-    <h1>Invoice Generator</h1>
-    <div id="btn-container"></div>
-    <h2>Items</h2>
-    <ul id="invoice-item-list"></ul>
-    <p id="total-price">0</p>
-    <button id="btn-submit">Send Invoice</button>
+    <article>
+      <header id="header-main">
+        <h1>Invoice creator</h1>
+        <h2>Thanks for choosing GoodCorp, LLC!</h2>
+      </header>
+
+      <main>
+        <section id="btn-container"></section>
+
+        <section id="line-items">
+          <header>
+            <h3>TASK</h3>
+            <h3>TOTAL</h3>
+          </header>
+          <ul id="invoice-item-list"></ul>
+        </section>
+
+        <footer>
+          <header>
+            <h3>NOTES</h3>
+            <h3>TOTAL AMOUNT</h3>
+          </header>
+          <section>
+            <p>We accept cash, credit card, or PayPal</p>
+            <p id="total-price">0</p>
+          </section>
+          <button id="btn-submit">Send Invoice</button>
+        </footer>
+      </main>
+    </article>
     <script src="index.js"></script>
   </body>
 </html>
