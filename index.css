@@ -1,1 +1,145 @@
-index.css
+/* index.css */
+
+:root {
+  --color-black: #222222;
+  --color-white: #ffffff;
+
+  --color-neutral-lighter: #f5f5f5;
+  --color-neutral-light: #d5d4d8;
+  --color-neutral: #918e9b;
+
+  --color-primary: #3a69d2;
+  --color-primary-lighter: #d1d4f4;
+  --color-primary-light: #c3c6db;
+  --color-primary-dark: #4a4e74;
+  --color-primary-darker: #1f2937;
+
+  --font-family-heading: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-family-heading);
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--color-neutral-light);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+article {
+  width: 500px;
+  height: 720px;
+  border: 5px solid var(--color-primary-dark);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-main {
+  flex: 0 0 190px;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--color-primary-darker);
+  flex-grow: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#line-items header,
+footer header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#invoice-item-list {
+  color: var(--color-neutral-lighter);
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  list-style: none;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid var(--color-primary-light);
+}
+
+#invoice-item-list li {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#btn-container button {
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  line-height: 16px;
+  background-color: var(--color-primary-lighter);
+  border: 1px solid var(--color-neutral-light);
+}
+
+footer button {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+footer button::before {
+  background-image: url(./images/mail.png);
+}
