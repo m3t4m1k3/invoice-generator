@@ -6,7 +6,7 @@ This project was completed as part of the [Scrimba](https://scrimba.com/) [Front
 
 ## Live Website
 
-View the [live site]()
+View the [live site](m3t4m1k3.github.io/invoice-generator/)
 
 ## Learning Goals
 
@@ -14,23 +14,22 @@ Implement a basic vanilla JavaScript application based on a list of specificatio
 
 ## Core Requirements
 
-- [ ] Array to hold services requested
-- [ ] Buttons to add service to array
-- [ ] Place to display data from array - updated every time the array changes
-- [ ] Don't charge more than once for the same service
-- [ ] Total cost stays updated
-- [ ] Button to "send invoice" (reset)
+- [x] Array to hold services requested
+- [x] Buttons to add service to array
+- [x] Place to display data from array - updated every time the array changes
+- [x] Don't charge more than once for the same service
+- [x] Total cost stays updated
+- [x] Button to "send invoice" (reset)
 
 ## Stretch Requirements
 
-- [ ] Remove items after adding
+- [x] Remove items after adding
 
 ## Additional Personal Stretch Requirements
 
-- [ ]
+- [ ] None at this time
 
-These are requirements I added to challenge myself further.
-These come from noticing improvements that could be made while completing the core and stretch project requirements.
+These are requirements I added to challenge myself further. These come from noticing improvements that could be made while completing the core and stretch project requirements.
 
 ## Design
 
@@ -44,4 +43,4 @@ Michael McGee [@m3t4m1k3](https://github.com/m3t4m1k3)
 
 ## TODO
 
-- [ ]
+- [ ] Add todo
