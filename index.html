@@ -15,36 +15,35 @@
     <title>Invoice Generator</title>
   </head>
   <body>
-    <article>
+    <main>
       <header id="header-main">
         <h1>Invoice creator</h1>
         <h2>Thanks for choosing GoodCorp, LLC!</h2>
       </header>
-
-      <main>
-        <section id="btn-container"></section>
-
-        <section id="line-items">
+      <section id="section-main">
+        <section id="section-btn-container"></section>
+        <section id="section-line-items">
           <header>
             <h3>TASK</h3>
             <h3>TOTAL</h3>
           </header>
           <ul id="invoice-item-list"></ul>
         </section>
-
-        <footer>
+        <section id="section-notes-total">
           <header>
             <h3>NOTES</h3>
             <h3>TOTAL AMOUNT</h3>
           </header>
           <section>
-            <p>We accept cash, credit card, or PayPal</p>
-            <p id="total-price">0</p>
+            <p id="notes">We accept cash, credit card, or PayPal</p>
+            <p id="total-price">$0</p>
           </section>
+        </section>
+        <section id="section-submit">
           <button id="btn-submit">Send Invoice</button>
-        </footer>
-      </main>
-    </article>
+        </section>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
