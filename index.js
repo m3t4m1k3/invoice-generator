@@ -20,12 +20,12 @@ const services = [
 
 let invoiceItems = [];
 
-const btnContainer = document.getElementById("btn-container");
+const btnContainer = document.getElementById("section-btn-container");
 const invoiceItemList = document.getElementById("invoice-item-list");
 const totalPrice = document.getElementById("total-price");
 const sendInvoiceBtn = document.getElementById("btn-submit");
 
-sendInvoiceBtn.addEventListener("click", function () {
+sendInvoiceBtn.addEventListener("click", function (e) {
   reset();
 });
 
@@ -33,7 +33,7 @@ function renderButtons() {
   services.forEach((service, i) => {
     const btn = document.createElement("button");
     btn.textContent = `${service.description}: $${service.price}`;
-    btn.addEventListener("click", function () {
+    btn.addEventListener("click", function (e) {
       addInvoiceItem(i);
     });
     btnContainer.appendChild(btn);
@@ -45,18 +45,22 @@ function renderInvoiceItems() {
 
   invoiceItems.forEach((item, i) => {
     const li = document.createElement("li");
+    const span = document.createElement("span");
+    const remove = document.createElement("button");
     const description = document.createElement("span");
-    const removeBtn = document.createElement("span");
     const price = document.createElement("span");
     description.textContent = services[i].description;
-    removeBtn.textContent = "Remove";
-    removeBtn.classList = "btn-remove";
-    removeBtn.addEventListener("click", function () {
+    description.classList = "item-description";
+    remove.textContent = "x";
+    remove.classList = "item-remove";
+    remove.addEventListener("click", function (e) {
       removeInvoiceItem(i);
     });
     price.textContent = `$${services[i].price}`;
-    li.appendChild(description);
-    li.appendChild(removeBtn);
+    price.classList = "item-price";
+    span.appendChild(remove);
+    span.appendChild(description);
+    li.appendChild(span);
     li.appendChild(price);
     invoiceItemList.appendChild(li);
   });
@@ -70,18 +74,18 @@ function renderTotal() {
     total += item.price;
   });
 
-  totalPrice.textContent = total;
+  totalPrice.textContent = "$" + total;
 }
 
 function addInvoiceItem(i) {
-  if (!invoiceItems[i]) {
+  if (invoiceItems[i] === undefined) {
     invoiceItems[i] = services[i];
     renderInvoiceItems();
   }
 }
 
 function removeInvoiceItem(i) {
-  invoiceItems[i] = undefined;
+  delete invoiceItems[i];
   renderInvoiceItems();
 }
 
