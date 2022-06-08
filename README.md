@@ -6,7 +6,7 @@ This project was completed as part of the [Scrimba](https://scrimba.com/) [Front
 
 ## Live Website
 
-View the [live site](m3t4m1k3.github.io/invoice-generator/)
+View the [live site](https://m3t4m1k3.github.io/invoice-generator/)
 
 ## Learning Goals
 
